@@ -12,4 +12,18 @@ class Kam_m extends CI_Model
             return false;
         }
     }
+
+    public function potvrd(){
+        $pole = array(
+            'Obec'=>$this->input->post('obec'),
+            'Ulica'=>$this->input->post('ulica')
+        );
+
+        $this->db->insert('Kam', $pole);
+        if($this->db->affected_rows() > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

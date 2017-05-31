@@ -1,7 +1,6 @@
-<center><h3>Tabuľka Odkial &nbsp;&nbsp;
-        <a href="<?php echo base_url('index.php/Odkial/add'); ?>" class="btn btn-success btn-xs""><span class="glyphicon">&#x2b;</span>&nbsp;Pridať záznam</a></h3></center><br>
-
 <div class="container">
+    <br><br><br><br>
+    <center><h3>Odkial</h3></center>
     <div class="table-responsive">
         <table class="table">
             <thead>

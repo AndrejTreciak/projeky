@@ -15,4 +15,15 @@ class Kam extends CI_Controller
         $this->load->view('Kam/index', $data);
         $this->load->view('template/footer');
     }
+
+    public function pridaj(){
+        $this->load->view('template/header');
+        $this->load->view('Kam/pridaj');
+        $this->load->view('template/footer');
+    }
+
+    public function potvrd(){
+        $this->m->potvrd();
+        redirect(base_url('index.php/Kam/index'));
+    }
 }
