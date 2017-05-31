@@ -46,12 +46,12 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Domov</a></li>
-                <li><a href="#about">Cesta</a></li>
-                <li><a href="#about">Kam</a></li>
-                <li><a href="#about">Odkial</a></li>
-                <li><a href="#contact">Taxikar</a></li>
-                <li><a href="#contact">Vozidlo</a></li>
+                <li><a href="<?php echo base_url(); ?>index.php/Home/index">Domov</a></li>
+                <li><a href="<?php echo base_url(); ?>index.php/Cesta/index">Cesta</a></li>
+                <li><a href="<?php echo base_url(); ?>index.php/Kam/index">Kam</a></li>
+                <li><a href="<?php echo base_url(); ?>index.php/Odkial/index">Odkial</a></li>
+                <li><a href="<?php echo base_url(); ?>index.php/Taxikar/index">Taxikar</a></li>
+                <li><a href="<?php echo base_url(); ?>index.php/Vozidlo/index">Vozidlo</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
