@@ -34,3 +34,7 @@
         </table>
     </div>
 </div>
+
+<center>
+    <?php echo $this->pagination->create_links() ?>
+</center>
