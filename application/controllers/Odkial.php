@@ -26,4 +26,21 @@ class Odkial extends CI_Controller
         $this->m->potvrd();
         redirect(base_url('index.php/Odkial/index'));
     }
+
+    public function zmen($id){
+        $data['odkial'] = $this->m->getOdkialById($id);
+        $this->load->view('template/header');
+        $this->load->view('Odkial/zmen', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function aktualizuj(){
+        $this->m->aktualizuj();
+        redirect(base_url('index.php/Odkial/index'));
+    }
+
+    public function vymaz($id){
+        $this->m->vymaz($id);
+        redirect(base_url('index.php/Odkial/index'));
+    }
 }

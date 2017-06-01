@@ -23,7 +23,8 @@
                             <td><?php echo $odkial->idOdkial; ?></td>
                             <td><?php echo $odkial->Obec; ?></td>
                             <td><?php echo $odkial->Ulica; ?></td>
-                            <td>Edit, Delete</td>
+                            <td><a href="<?php echo base_url('index.php/Odkial/zmen/'.$odkial->idOdkial); ?>"><button type="submit" class="btn btn-info">Zmeniť</button></a>
+                                <a href="<?php echo base_url('index.php/Odkial/vymaz/'.$odkial->idOdkial); ?>"><button type="submit" class="btn btn-danger">Vymazať</button></a></td>
                         </tr>
                         <?php
                     }
