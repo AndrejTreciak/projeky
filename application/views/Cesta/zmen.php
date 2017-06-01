@@ -20,9 +20,14 @@
                 <?php
                 if($odkial){
                     foreach($odkial as $odkial){
-                        ?>
-                        <option value="<?php echo $odkial->Odkial_idOdkial; ?>"><?php echo $odkial->Odkial_idOdkial; ?></option>
-                        <?php
+                        if($odkial->Odkial_idOdkial == $cesta->Odkial_idOdkial) {
+                            ?>
+                            <option selected value="<?php echo $odkial->Odkial_idOdkial; ?>"><?php echo $odkial->Odkial_idOdkial; ?></option>
+                            <?php
+                        }else{?>
+                            <option value="<?php echo $odkial->Odkial_idOdkial; ?>"><?php echo $odkial->Odkial_idOdkial; ?></option>
+                            <?php
+                        }
                     }
                 }
                 ?>
@@ -35,9 +40,14 @@
                 <?php
                 if($kam){
                     foreach($kam as $kam){
-                        ?>
-                        <option value="<?php echo $kam->Kam_idKam; ?>"><?php echo $kam->Kam_idKam; ?></option>
-                        <?php
+                        if($kam->Kam_idKam == $cesta->Kam_idKam) {
+                            ?>
+                            <option selected value="<?php echo $kam->Kam_idKam; ?>"><?php echo $kam->Kam_idKam; ?></option>
+                            <?php
+                        }else{?>
+                            <option  value="<?php echo $kam->Kam_idKam; ?>"><?php echo $kam->Kam_idKam; ?></option>
+                            <?php
+                        }
                     }
                 }
                 ?>
@@ -50,9 +60,14 @@
                 <?php
                 if($vozidlo){
                     foreach($vozidlo as $vozidlo){
-                        ?>
-                        <option value="<?php echo $vozidlo->Vozidlo_idVozidlo; ?>"><?php echo $vozidlo->Vozidlo_idVozidlo; ?></option>
-                        <?php
+                        if ($vozidlo->Vozidlo_idVozidlo == $cesta->Vozidlo_idVozidlo) {
+                            ?>
+                            <option selected value="<?php echo $vozidlo->Vozidlo_idVozidlo; ?>"><?php echo $vozidlo->Vozidlo_idVozidlo; ?></option>
+                            <?php
+                        }else{?>
+                            <option value="<?php echo $vozidlo->Vozidlo_idVozidlo; ?>"><?php echo $vozidlo->Vozidlo_idVozidlo; ?></option>
+                            <?php
+                        }
                     }
                 }
                 ?>

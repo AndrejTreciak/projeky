@@ -18,7 +18,7 @@
             <label>Vek:</label>
             <input type="text" value="<?php echo $taxikar->Vek; ?>" class="form-control" name="vek">
         </div>
-        
+
         <div class="form-group">
             <label>Kontakt:</label>
             <select name="K_ID">
