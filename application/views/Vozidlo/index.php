@@ -25,7 +25,8 @@
                         <td><?php echo $vozidlo->Znacka; ?></td>
                         <td><?php echo $vozidlo->Evidencne_Cislo; ?></td>
                         <td><?php echo $vozidlo->Taxikár_idTaxikár; ?></td>
-                        <td>Edit, Delete</td>
+                        <td><a href="<?php echo base_url('index.php/Vozidlo/zmen/'.$vozidlo->idVozidlo); ?>"><button type="submit" class="btn btn-info">Zmeniť</button></a>
+                            <a href="<?php echo base_url('index.php/Vozidlo/vymaz/'.$vozidlo->idVozidlo); ?>"><button type="submit" class="btn btn-danger">Vymazať</button></a></td>
                     </tr>
                     <?php
                 }

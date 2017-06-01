@@ -27,4 +27,22 @@ class Vozidlo extends CI_Controller
         $this->m->potvrd();
         redirect(base_url('index.php/Vozidlo/index'));
     }
+
+    public function zmen($id){
+        $data['vozidlo'] = $this->m->getVozidloById($id);
+        $data['taxikar'] = $this->m->getTid();
+        $this->load->view('template/header');
+        $this->load->view('Vozidlo/zmen', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function aktualizuj(){
+        $this->m->aktualizuj();
+        redirect(base_url('index.php/Vozidlo/index'));
+    }
+
+    public function vymaz($id){
+        $this->m->vymaz($id);
+        redirect(base_url('index.php/Vozidlo/index'));
+    }
 }

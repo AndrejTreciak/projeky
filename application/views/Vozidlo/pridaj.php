@@ -20,7 +20,7 @@
                 if($vozidlo){
                     foreach($vozidlo as $vozidlo){
                         ?>
-                        <option value="<?php echo $vozidlo->Taxikár_idTaxikár; ?>"><?php echo $vozidlo->Taxikár_idTaxikár; ?></option>
+                        <option value="<?php echo $vozidlo->idTaxikár; ?>"><?php echo $vozidlo->idTaxikár; ?></option>
                         <?php
                     }
                 }
