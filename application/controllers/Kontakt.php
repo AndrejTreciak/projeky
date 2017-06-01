@@ -26,4 +26,21 @@ class Kontakt extends CI_Controller
         $this->m->potvrd();
         redirect(base_url('index.php/Kontakt/index'));
     }
+
+    public function zmen($id){
+        $data['kontakt'] = $this->m->getKontaktById($id);
+        $this->load->view('template/header');
+        $this->load->view('Kontakt/zmen', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function aktualizuj(){
+        $this->m->aktualizuj();
+        redirect(base_url('index.php/Kontakt/index'));
+    }
+
+    public function vymaz($id){
+        $this->m->vymaz($id);
+        redirect(base_url('index.php/Kontakt/index'));
+    }
 }

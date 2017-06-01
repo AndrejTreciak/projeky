@@ -21,7 +21,8 @@
                     <tr>
                         <td><?php echo $kontakt->idKontakt; ?></td>
                         <td><?php echo $kontakt->Tel_Cislo; ?></td>
-                        <td>Edit, Delete</td>
+                        <td><a href="<?php echo base_url('index.php/Kontakt/zmen/'.$kontakt->idKontakt); ?>"><button type="submit" class="btn btn-info">Zmeniť</button></a>
+                            <a href="<?php echo base_url('index.php/Kontakt/vymaz/'.$kontakt->idKontakt); ?>"><button type="submit" class="btn btn-danger">Vymazať</button></a></td>
                     </tr>
                     <?php
                 }
