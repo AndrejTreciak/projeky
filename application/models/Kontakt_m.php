@@ -12,4 +12,17 @@ class Kontakt_m extends CI_Model
             return false;
         }
     }
+
+    public function potvrd(){
+        $pole = array(
+            'Tel_Cislo'=>$this->input->post('telc')
+        );
+
+        $this->db->insert('Kontakt', $pole);
+        if($this->db->affected_rows() > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

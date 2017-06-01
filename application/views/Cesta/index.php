@@ -1,7 +1,9 @@
 <div class="container">
 
     <br><br><br><br>
-    <center><h3>Cesta</h3></center>
+    <center><h3>Cesta</h3>
+        <a href="<?php echo base_url('index.php/Cesta/pridaj'); ?>">Pridať záznam</a></center><br>
+
     <div class="table-responsive">
         <table class="table">
             <thead>

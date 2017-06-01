@@ -50,6 +50,7 @@
                 <li><a href="<?php echo base_url(); ?>index.php/Cesta/index">Cesta</a></li>
                 <li><a href="<?php echo base_url(); ?>index.php/Kam/index">Kam</a></li>
                 <li><a href="<?php echo base_url(); ?>index.php/Odkial/index">Odkial</a></li>
+                <li><a href="<?php echo base_url(); ?>index.php/Kontakt/index">Kontakt</a></li>
                 <li><a href="<?php echo base_url(); ?>index.php/Taxikar/index">Taxikar</a></li>
                 <li><a href="<?php echo base_url(); ?>index.php/Vozidlo/index">Vozidlo</a></li>
             </ul>

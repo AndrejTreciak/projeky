@@ -15,4 +15,16 @@ class Vozidlo extends CI_Controller
         $this->load->view('Vozidlo/index', $data);
         $this->load->view('template/footer');
     }
+
+    public function pridaj(){
+        $data['vozidlo'] = $this->m->getTid();
+        $this->load->view('template/header');
+        $this->load->view('Vozidlo/pridaj', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function potvrd(){
+        $this->m->potvrd();
+        redirect(base_url('index.php/Vozidlo/index'));
+    }
 }

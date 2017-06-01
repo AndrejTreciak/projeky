@@ -1,6 +1,9 @@
 <div class="container">
+
     <br><br><br><br>
-    <center><h3>Taxikar</h3></center>
+    <center><h3>Taxikar</h3>
+        <a href="<?php echo base_url('index.php/Taxikar/pridaj'); ?>">Pridať záznam</a></center><br>
+
     <div class="table-responsive">
         <table class="table">
             <thead>

@@ -1,7 +1,7 @@
 <div class="container">
 
     <br><br><br><br>
-    <center><h3>Vozidlo</h3><br>
+    <center><h3>Vozidlo</h3>
     <a href="<?php echo base_url('index.php/Vozidlo/pridaj'); ?>">Pridať záznam</a></center><br>
 
     <div class="table-responsive">

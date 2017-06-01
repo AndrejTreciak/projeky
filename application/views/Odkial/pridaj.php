@@ -3,12 +3,12 @@
     <center><h3>Pridaj záznam</h3></center>
     <form action="<?php echo base_url('index.php/Odkial/potvrd') ?>" method="post">
         <div class="form-group">
-            <label for="email">Obec:</label>
+            <label>Obec:</label>
             <input type="text" class="form-control" name="obec">
         </div>
 
         <div class="form-group">
-            <label for="pwd">Ulica:</label>
+            <label>Ulica:</label>
             <input type="text" class="form-control" name="ulica">
         </div>
 

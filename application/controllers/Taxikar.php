@@ -15,4 +15,16 @@ class Taxikar extends CI_Controller
         $this->load->view('Taxikar/index', $data);
         $this->load->view('template/footer');
     }
+
+    public function pridaj(){
+        $data['taxikar'] = $this->m->getKid();
+        $this->load->view('template/header');
+        $this->load->view('Taxikar/pridaj', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function potvrd(){
+        $this->m->potvrd();
+        redirect(base_url('index.php/Taxikar/index'));
+    }
 }

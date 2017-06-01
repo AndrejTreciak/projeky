@@ -12,4 +12,51 @@ class Cesta_m extends CI_Model
             return false;
         }
     }
+
+    public function potvrd(){
+        $pole = array(
+            'Cena'=>$this->input->post('cena'),
+            'Datum'=>$this->input->post('datum'),
+            'Odkial_idOdkial'=>$this->input->post('odkial'),
+            'Kam_idKam'=>$this->input->post('kam'),
+            'Vozidlo_idVozidlo'=>$this->input->post('vozidlo')
+        );
+
+        $this->db->insert('Cesta', $pole);
+        if($this->db->affected_rows() > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function getOdkial(){
+        $query = $this->db->query("SELECT Odkial_idOdkial FROM Cesta");
+
+        if($query->num_rows() > 0){
+            return $query->result();
+        }else{
+            return false;
+        }
+    }
+
+    public function getKam(){
+        $query = $this->db->query("SELECT Kam_idKam FROM Cesta");
+
+        if($query->num_rows() > 0){
+            return $query->result();
+        }else{
+            return false;
+        }
+    }
+
+    public function getVozidlo(){
+        $query = $this->db->query("SELECT Vozidlo_idVozidlo FROM Cesta");
+
+        if($query->num_rows() > 0){
+            return $query->result();
+        }else{
+            return false;
+        }
+    }
 }
