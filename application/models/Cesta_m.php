@@ -4,8 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Cesta_m extends CI_Model
 {
-    public function getCesta(){
-        $query = $this->db->get('Cesta');
+    public function getCesta($limit = 0, $offset = 0){
+        $query = $this->db->get('Cesta', $limit, $offset);
         if($query->num_rows() > 0){
             return $query->result();
         }else{
