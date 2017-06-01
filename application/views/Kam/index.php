@@ -2,7 +2,7 @@
 
     <br><br><br><br>
     <center><h3>Kam</h3>
-    <a href="<?php echo base_url('index.php/Kam/pridaj'); ?>">Pridať záznam</a></center><br>
+    <a href="<?php echo base_url('index.php/Kam/pridaj'); ?>"><button type="submit" class="btn btn-classic">Pridať záznam</button></a></center><br>
 
     <div class="table-responsive">
         <table class="table">
@@ -23,7 +23,8 @@
                         <td><?php echo $kam->idKam; ?></td>
                         <td><?php echo $kam->Obec; ?></td>
                         <td><?php echo $kam->Ulica; ?></td>
-                        <td>Edit, Delete</td>
+                        <td><a href="<?php echo base_url('index.php/Kam/zmen/'.$kam->idKam); ?>"><button type="submit" class="btn btn-info">Zmeniť</button></a>
+                            Delete</td>
                     </tr>
                     <?php
                 }

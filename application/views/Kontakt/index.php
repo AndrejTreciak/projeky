@@ -2,7 +2,7 @@
 
     <br><br><br><br>
     <center><h3>Kontakt</h3>
-        <a href="<?php echo base_url('index.php/Kontakt/pridaj'); ?>">Pridať záznam</a></center><br>
+        <a href="<?php echo base_url('index.php/Kontakt/pridaj'); ?>"><button type="submit" class="btn btn-classic">Pridať záznam</button></a></center><br>
 
     <div class="table-responsive">
         <table class="table">

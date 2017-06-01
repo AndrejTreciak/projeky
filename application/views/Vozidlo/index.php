@@ -2,7 +2,7 @@
 
     <br><br><br><br>
     <center><h3>Vozidlo</h3>
-    <a href="<?php echo base_url('index.php/Vozidlo/pridaj'); ?>">Pridať záznam</a></center><br>
+        <a href="<?php echo base_url('index.php/Vozidlo/pridaj'); ?>"><button type="submit" class="btn btn-classic">Pridať záznam</button></a></center><br>
 
     <div class="table-responsive">
         <table class="table">
