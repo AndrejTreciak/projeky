@@ -27,7 +27,8 @@
                         <td><?php echo $taxikar->Priezvisko; ?></td>
                         <td><?php echo $taxikar->Vek; ?></td>
                         <td><?php echo $taxikar->Kontakt_idKontakt; ?></td>
-                        <td>Edit, Delete</td>
+                        <td><a href="<?php echo base_url('index.php/Taxikar/zmen/'.$taxikar->idTaxikár); ?>"><button type="submit" class="btn btn-info">Zmeniť</button></a>
+                            <a href="<?php echo base_url('index.php/Taxikar/vymaz/'.$taxikar->idTaxikár); ?>"><button type="submit" class="btn btn-danger">Vymazať</button></a></td>
                     </tr>
                     <?php
                 }

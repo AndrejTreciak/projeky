@@ -27,4 +27,22 @@ class Taxikar extends CI_Controller
         $this->m->potvrd();
         redirect(base_url('index.php/Taxikar/index'));
     }
+
+    public function zmen($id){
+        $data['taxikar'] = $this->m->getTaxikarById($id);
+        $data['kontakt'] = $this->m->getKid();
+        $this->load->view('template/header');
+        $this->load->view('Taxikar/zmen', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function aktualizuj(){
+        $this->m->aktualizuj();
+        redirect(base_url('index.php/Taxikar/index'));
+    }
+
+    public function vymaz($id){
+        $this->m->vymaz($id);
+        redirect(base_url('index.php/Taxikar/index'));
+    }
 }

@@ -1,21 +1,22 @@
 <div class="container">
     <br><br><br><br>
-    <center><h3>Pridaj záznam</h3></center>
+    <center><h3>Zmeň záznam</h3></center>
 
-    <form action="<?php echo base_url('index.php/Taxikar/potvrd') ?>" method="post">
+    <form action="<?php echo base_url('index.php/Taxikar/aktualizuj') ?>" method="post">
+        <input type="hidden" name="txt_hidden" value="<?php echo $taxikar->idTaxikár; ?>">
         <div class="form-group">
             <label>Meno:</label>
-            <input type="text" class="form-control" name="meno">
+            <input type="text" value="<?php echo $taxikar->Meno; ?>" class="form-control" name="meno">
         </div>
 
         <div class="form-group">
             <label>Priezvisko:</label>
-            <input type="text" class="form-control" name="priezvisko">
+            <input type="text" value="<?php echo $taxikar->Priezvisko; ?>" class="form-control" name="priezvisko">
         </div>
 
         <div class="form-group">
             <label>Vek:</label>
-            <input type="text" class="form-control" name="vek">
+            <input type="text" value="<?php echo $taxikar->Vek; ?>" class="form-control" name="vek">
         </div>
 
         <div class="form-group">
@@ -23,9 +24,9 @@
             <select name="K_ID">
                 <?php
                 if($taxikar){
-                    foreach($taxikar as $taxikar){
+                    foreach($kontakt as $kontakt){
                         ?>
-                        <option value="<?php echo $taxikar->idKontakt; ?>"><?php echo $taxikar->idKontakt; ?></option>
+                        <option value="<?php echo $kontakt->idKontakt; ?>"><?php echo $kontakt->idKontakt; ?></option>
                         <?php
                     }
                 }

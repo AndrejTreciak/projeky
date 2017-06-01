@@ -29,7 +29,8 @@
                         <td><?php echo $cesta->Odkial_idOdkial; ?></td>
                         <td><?php echo $cesta->Kam_idKam; ?></td>
                         <td><?php echo $cesta->Vozidlo_idVozidlo; ?></td>
-                        <td>Edit, Delete</td>
+                        <td><a href="<?php echo base_url('index.php/Cesta/zmen/'.$cesta->idCesta); ?>"><button type="submit" class="btn btn-info">Zmeniť</button></a>
+                            <a href="<?php echo base_url('index.php/Cesta/vymaz/'.$cesta->idCesta); ?>"><button type="submit" class="btn btn-danger">Vymazať</button></a></td>
                     </tr>
                     <?php
                 }
