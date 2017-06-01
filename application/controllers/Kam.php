@@ -38,4 +38,9 @@ class Kam extends CI_Controller
         $this->m->aktualizuj();
         redirect(base_url('index.php/Kam/index'));
     }
+
+    public function vymaz($id){
+        $this->m->vymaz($id);
+        redirect(base_url('index.php/Kam/index'));
+    }
 }

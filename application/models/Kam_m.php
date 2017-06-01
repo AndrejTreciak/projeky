@@ -52,4 +52,14 @@ class Kam_m extends CI_Model
             return false;
         }
     }
+
+    public function vymaz($id){
+        $this->db->where('IDKam', $id);
+        $this->db->delete('Kam');
+        if($this->db->affected_rows() > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

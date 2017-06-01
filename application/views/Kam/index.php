@@ -24,7 +24,7 @@
                         <td><?php echo $kam->Obec; ?></td>
                         <td><?php echo $kam->Ulica; ?></td>
                         <td><a href="<?php echo base_url('index.php/Kam/zmen/'.$kam->idKam); ?>"><button type="submit" class="btn btn-info">Zmeniť</button></a>
-                            Delete</td>
+                            <a href="<?php echo base_url('index.php/Kam/vymaz/'.$kam->idKam); ?>"><button type="submit" class="btn btn-danger">Vymazať</button></a></td>
                     </tr>
                     <?php
                 }
