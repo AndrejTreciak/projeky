@@ -4,8 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Taxikar_m extends CI_Model
 {
-    public function getTaxikar(){
-        $query = $this->db->get('Taxikár');
+    public function getTaxikar($limit = 0, $offset = 0){
+        $query = $this->db->get('Taxikár', $limit, $offset);
         if($query->num_rows() > 0){
             return $query->result();
         }else{
