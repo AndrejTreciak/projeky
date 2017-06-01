@@ -4,8 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Kontakt_m extends CI_Model
 {
-    public function getKontakt(){
-        $query = $this->db->get('Kontakt');
+    public function getKontakt($limit = 0, $offset = 0){
+        $query = $this->db->get('Kontakt', $limit, $offset);
         if($query->num_rows() > 0){
             return $query->result();
         }else{
