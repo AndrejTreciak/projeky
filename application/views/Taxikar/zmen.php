@@ -18,16 +18,21 @@
             <label>Vek:</label>
             <input type="text" value="<?php echo $taxikar->Vek; ?>" class="form-control" name="vek">
         </div>
-
+        
         <div class="form-group">
             <label>Kontakt:</label>
             <select name="K_ID">
                 <?php
                 if($taxikar){
                     foreach($kontakt as $kontakt){
-                        ?>
-                        <option value="<?php echo $kontakt->idKontakt; ?>"><?php echo $kontakt->idKontakt; ?></option>
-                        <?php
+                        if($taxikar->Kontakt_idKontakt == $kontakt->idKontakt) {
+                            ?>
+                            <option selected value="<?php echo $kontakt->idKontakt; ?>"><?php echo $kontakt->idKontakt; ?></option>
+                            <?php
+                        }else{?>
+                            <option  value="<?php echo $kontakt->idKontakt; ?>"><?php echo $kontakt->idKontakt; ?></option>
+                            <?php
+                        }
                     }
                 }
                 ?>

@@ -30,7 +30,7 @@ class Taxikar extends CI_Controller
 
     public function zmen($id){
         $data['taxikar'] = $this->m->getTaxikarById($id);
-        $data['kontakt'] = $this->m->getKid();
+        $data['kontakt'] = $this->m->getKid($id);
         $this->load->view('template/header');
         $this->load->view('Taxikar/zmen', $data);
         $this->load->view('template/footer');
