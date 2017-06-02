@@ -46,7 +46,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="<?php echo base_url(); ?>index.php/Home/index">Domov</a></li>
+                <li><a href="<?php echo base_url(); ?>index.php/Graf/index">Domov</a></li>
                 <li><a href="<?php echo base_url(); ?>index.php/Cesta/index">Cesta</a></li>
                 <li><a href="<?php echo base_url(); ?>index.php/Kam/index">Kam</a></li>
                 <li><a href="<?php echo base_url(); ?>index.php/Odkial/index">Odkial</a></li>
